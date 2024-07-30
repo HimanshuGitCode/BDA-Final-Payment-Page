@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white shadow-md rounded-md p-6 w-full max-w-md">
+        <div class="text-center mb-6">
+            <img src="./img/logo.png" alt="Logo" class="mx-auto h-12 w-auto">
+            <h2 class="text-xl font-bold mt-4">You are paying for</h2>
+            <h1 class="text-2xl font-bold text-green-600">Accelerate with AI</h1>
+        </div>
+        <form>
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700">Full Name <span class="text-red-500">*</span></label>
+                <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" placeholder="Name">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700">Email <span class="text-red-500">*</span></label>
+                <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" placeholder="Email">
+            </div>
+            <div class="mb-4">
+                <label for="mobile" class="block text-gray-700">Mobile Number <span class="text-red-500">*</span></label>
+                <input type="tel" id="mobile" name="mobile" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" placeholder="+91 XXXXXXXXXX">
+            </div>
+            <div class="flex items-center mb-4">
+              <p class="text-gray-700">
+                  We will send updates above 
+                  <span class="text-blue-500">
+                      <a href="mailto:your-email@example.com" class="hover:underline">Mail</a>
+                  </span> 
+                  and 
+                  <span class="text-green-500">
+                      <a href="https://wa.me/1234567890" class="hover:underline">Whatsapp</a>
+                  </span>.
+              </p>
+          </div>
+          
+            <div class="border-t border-gray-300 pt-4">
+                <div class="mb-2 flex justify-between">
+                    <span class="text-gray-700">Amount</span>
+                    <span class="text-gray-700">Rs. 20</span>
+                </div>
+                <div class="mb-2 flex justify-between">
+                    <span class="text-gray-700">GST</span>
+                    <span class="text-gray-700">Rs. 3.60</span>
+                </div>
+                <div class="mb-2 flex justify-between font-bold">
+                    <span class="text-gray-900">Total Payable</span>
+                    <span class="text-gray-900">Rs. 23.60</span>
+                </div>
+                <button type="submit" class="w-full bg-green-500 text-white py-2 px-4 rounded-md mt-4 hover:bg-green-600">Process Payment</button>
+            </div>
+            <div class="text-center mt-4 text-gray-500 text-sm">
+                By continuing, you accept our <a href="#" class="text-blue-500">Terms</a>, <a href="#" class="text-blue-500">Privacy</a>, and <a href="#" class="text-blue-500">Refund Policy</a>.
+            </div>
+        </form>
+        <div style="display: flex; justify-content: center; align-items: center; padding: 3px;">
+          <div style="
+              background-color: #e0f7fa; /* Light blue background color for button-like appearance */
+              border: 1px solid #b2ebf2; /* Border around the button */
+              border-radius: 5px; /* Rounded corners */
+              padding: 3px 10px; /* Further reduced padding */
+              display: flex;
+              align-items: center;
+              gap: 8px; /* Slightly reduced space between text and image */
+              font-size: 16px;
+          ">
+              Secured by
+              <img src="./img/razorpay.png" alt="Razorpay Logo" style="
+                  height: 18px; /* Adjusted height to fit better */
+                  vertical-align: middle; /* Align image with text */
+              ">
+          </div>
+      </div>        
+    </div>
+</body>
+</html>
